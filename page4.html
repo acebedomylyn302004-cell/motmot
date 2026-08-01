@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relationship Quiz 😂💙 - Happy 5th Monthsary</title>
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="page4.css">
+    <!-- External JavaScript -->
+    <script src="page4.js" defer></script>
+</head>
+<body>
+    <!-- ============================================ -->
+    <!-- RELATIONSHIP QUIZ - Full Screen Hero Section -->
+    <!-- ============================================ -->
+    <section class="quiz-hero" id="quizHero">
+        
+        <!-- ========================================== -->
+        <!-- MAIN CONTENT CONTAINER                    -->
+        <!-- ========================================== -->
+        <div class="quiz-content">
+
+            <!-- Main Title -->
+            <h1 class="main-title">Relationship Quiz 😂💙</h1>
+
+            <!-- Subtitle -->
+            <p class="subtitle">
+                "Let's see how well you know us! No pressure... but choose wisely. 🤭"
+            </p>
+
+            <!-- ========================================== -->
+            <!-- QUIZ CARD                                 -->
+            <!-- ========================================== -->
+            <div class="quiz-card" id="quizCard">
+                
+                <!-- ========================================== -->
+                <!-- PROGRESS BAR & QUESTION COUNTER            -->
+                <!-- ========================================== -->
+                <div class="quiz-header">
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" id="progressBar"></div>
+                    </div>
+                    <p class="question-counter" id="questionCounter">Question 1 of 10</p>
+                </div>
+
+                <!-- ========================================== -->
+                <!-- QUESTION TEXT                             -->
+                <!-- ========================================== -->
+                <div class="question-container">
+                    <p class="question-text" id="questionText">
+                        Kinsa pirmi mauna og pangaway?
+                    </p>
+                </div>
+
+                <!-- ========================================== -->
+                <!-- ANSWER BUTTONS                            -->
+                <!-- ========================================== -->
+                <div class="answers-container" id="answersContainer">
+                    <button class="btn-answer" id="answerBtn1" data-answer="0">Wifey</button>
+                    <button class="btn-answer" id="answerBtn2" data-answer="1">Hubby</button>
+                    <button class="btn-answer" id="answerBtn3" data-answer="2">Misunderstanding</button>
+                </div>
+
+                <!-- ========================================== -->
+                <!-- HIDDEN RESPONSE BOX                       -->
+                <!-- ========================================== -->
+                <div class="response-box hidden" id="responseBox">
+                    <p class="response-text" id="responseText">
+                        "Usahay si Wifey, usahay si Hubby, pero kasagaran misunderstanding ra gyud. 😂"
+                    </p>
+                </div>
+
+                <!-- ========================================== -->
+                <!-- NAVIGATION BUTTONS                        -->
+                <!-- ========================================== -->
+                <div class="navigation-buttons">
+                    <button class="btn-prev" id="prevButton" disabled>
+                        ⬅ Previous
+                    </button>
+                    <button class="btn-next hidden" id="nextButton">
+                        Next ➡
+                    </button>
+                </div>
+
+                <!-- ========================================== -->
+                <!-- FINAL SCORE CARD (hidden until complete)  -->
+                <!-- ========================================== -->
+                <div class="score-card hidden" id="scoreCard">
+                    <div class="score-header">
+                        <span class="score-emoji">🎉</span>
+                        <p class="score-message">
+                            You officially know our relationship! ❤️😂
+                        </p>
+                    </div>
+                    <div class="award-container">
+                        <span class="award-icon">🏆</span>
+                        <p class="award-text">Best Hubby Award</p>
+                    </div>
+                    <div class="score-stats">
+                        <p class="stat-text">💙 10/10 Questions Answered</p>
+                        <p class="stat-text">🌟 Love Level: Infinite</p>
+                    </div>
+                    
+                    <!-- ========================================== -->
+                    <!-- CONTINUE BUTTON - Navigates to page5.html -->
+                    <!-- ========================================== -->
+                    <a href="page5.html" class="btn-continue" id="continueButton">
+                        Continue Our Journey 💙 ➡
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- ========================================== -->
+            <!-- PAGE NAVIGATION BAR                        -->
+            <!-- ========================================== -->
+            <div class="page-navigation">
+                <a href="page3.html" class="nav-link prev-page">⬅ Previous Page</a>
+                <span class="page-indicator">Page 4 of 10</span>
+                <!-- This direct link is hidden until quiz is complete -->
+                <a href="#" class="nav-link next-page hidden" id="directNextPage">
+                    Next Page ➡
+                </a>
+            </div>
+
+        </div>
+
+        <!-- ========================================== -->
+        <!-- DECORATIVE ELEMENTS CONTAINERS             -->
+        <!-- ========================================== -->
+        <div class="floating-hearts" id="floatingHearts" aria-hidden="true"></div>
+        <div class="sparkles" id="sparkles" aria-hidden="true"></div>
+        <div class="decorative-elements" id="decorativeElements" aria-hidden="true"></div>
+        
+    </section>
+
+    <!-- ========================================== -->
+    <!-- FOOTER                                     -->
+    <!-- ========================================== -->
+    <footer class="quiz-footer">
+        <p class="footer-message">Made with 💙 for you.</p>
+    </footer>
+</body>
+</html>

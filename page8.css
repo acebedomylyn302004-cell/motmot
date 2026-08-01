@@ -1,0 +1,1047 @@
+/* ==============================================
+   CSS VARIABLES – Romantic Night Sky Aesthetic
+   ============================================== */
+:root {
+    --primary-blue: #0a0a1a;
+    --secondary-blue: #1a1a3e;
+    --accent-blue: #4a47b1;
+    --light-blue: #6c63ff;
+    --pale-blue: #a8a4ff;
+    --moon-glow: #f0e6d0;
+    --white: #ffffff;
+    --silver: #c0c0c0;
+    --gold: #fbbf24;
+    --glass-bg: rgba(255, 255, 255, 0.06);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --text-light: #f0f0ff;
+    --text-muted: #c8c6e8;
+    --shadow-dark: rgba(0, 0, 0, 0.6);
+    --shadow-glow: 0 8px 32px rgba(108, 99, 255, 0.25);
+    --font-primary: 'Segoe UI', 'Helvetica Neue', system-ui, -apple-system, sans-serif;
+    --font-heading: 'Georgia', 'Times New Roman', serif;
+}
+
+/* ==============================================
+   RESET & BASE
+   ============================================== */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    font-family: var(--font-primary);
+    background: linear-gradient(180deg, #0a0a1a 0%, #0d0d2b 30%, #1a1a3e 60%, #2d2b6b 100%);
+    color: var(--text-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* ==============================================
+   DREAMS HERO SECTION
+   ============================================== */
+.dreams-hero {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1.5rem;
+    z-index: 2;
+    animation: fadeInUp 1.2s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+/* ==============================================
+   MOON
+   ============================================== */
+.dreams-hero::before {
+    content: '🌙';
+    position: fixed;
+    top: 5%;
+    right: 10%;
+    font-size: 8rem;
+    opacity: 0.15;
+    animation: moonGlow 4s ease-in-out infinite alternate;
+    z-index: 0;
+    pointer-events: none;
+    filter: drop-shadow(0 0 60px rgba(240, 230, 208, 0.1));
+}
+
+@keyframes moonGlow {
+    0% {
+        transform: scale(1) translateY(0);
+        opacity: 0.15;
+        filter: drop-shadow(0 0 60px rgba(240, 230, 208, 0.1));
+    }
+    100% {
+        transform: scale(1.05) translateY(-10px);
+        opacity: 0.25;
+        filter: drop-shadow(0 0 80px rgba(240, 230, 208, 0.2));
+    }
+}
+
+/* ==============================================
+   FLOATING STARS
+   ============================================== */
+.floating-stars {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.floating-stars .star {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.6rem;
+    animation: starFloat 8s ease-in-out infinite;
+}
+
+.floating-stars .star:nth-child(odd) {
+    animation-duration: 6s;
+    font-size: 0.4rem;
+}
+
+.floating-stars .star:nth-child(3n) {
+    animation-duration: 10s;
+    font-size: 0.8rem;
+}
+
+@keyframes starFloat {
+    0%, 100% {
+        transform: translateY(0) scale(0.8);
+        opacity: 0.3;
+    }
+    50% {
+        transform: translateY(-30px) scale(1.2);
+        opacity: 1;
+    }
+}
+
+/* ==============================================
+   FLOATING HEARTS
+   ============================================== */
+.floating-hearts {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+/* ==============================================
+   MAIN CONTENT
+   ============================================== */
+.dreams-content {
+    position: relative;
+    z-index: 3;
+    max-width: 850px;
+    width: 100%;
+    padding: 2rem 1.5rem;
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    border-radius: 3rem;
+    box-shadow: var(--shadow-glow), inset 0 1px 1px rgba(255, 255, 255, 0.06);
+    animation: floatIn 1.4s ease-out forwards;
+    max-height: 85vh;
+    overflow-y: auto;
+}
+
+.dreams-content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.dreams-content::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 10px;
+}
+
+.dreams-content::-webkit-scrollbar-thumb {
+    background: var(--light-blue);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(108, 99, 255, 0.2);
+}
+
+/* ==============================================
+   TYPOGRAPHY
+   ============================================== */
+.main-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 8vw, 4rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    color: #ffffff;
+    text-shadow: 0 2px 20px rgba(108, 99, 255, 0.4), 0 4px 40px rgba(0, 0, 0, 0.2);
+    margin-bottom: 0.3rem;
+    background: linear-gradient(135deg, #ffffff 0%, var(--pale-blue) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: shimmerTitle 3s ease-in-out infinite alternate;
+}
+
+.subtitle {
+    font-size: clamp(0.95rem, 2.2vw, 1.2rem);
+    font-weight: 300;
+    color: var(--text-muted);
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0.2rem auto 1.5rem auto;
+    letter-spacing: 0.02em;
+    text-shadow: 0 1px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ==============================================
+   PROGRESS INDICATOR
+   ============================================== */
+.progress-indicator {
+    max-width: 500px;
+    margin: 0 auto 1.5rem auto;
+    padding: 1rem 1.5rem;
+    background: var(--glass-bg);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid var(--glass-border);
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.progress-text {
+    font-size: clamp(0.9rem, 1.8vw, 1.1rem);
+    font-weight: 500;
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.04em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+}
+
+.progress-count {
+    font-weight: 700;
+    color: var(--light-blue);
+    font-size: 1.2em;
+    min-width: 1.5rem;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.progress-count.pop {
+    animation: counterPop 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+@keyframes counterPop {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.5); color: #fbbf24; }
+    100% { transform: scale(1); }
+}
+
+.progress-total {
+    color: var(--text-muted);
+    opacity: 0.6;
+}
+
+.progress-bar-container {
+    width: 100%;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, var(--light-blue), var(--pale-blue), var(--gold));
+    border-radius: 10px;
+    transition: width 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+    box-shadow: 0 0 20px rgba(108, 99, 255, 0.3);
+    position: relative;
+}
+
+.progress-bar::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 20px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3));
+    border-radius: 10px;
+    animation: progressGlow 1.5s ease-in-out infinite;
+}
+
+@keyframes progressGlow {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.8; }
+}
+
+/* ==============================================
+   DREAMS TIMELINE
+   ============================================== */
+.dreams-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin: 0.5rem 0 1rem 0;
+    position: relative;
+}
+
+.dreams-timeline::before {
+    content: '';
+    position: absolute;
+    left: 28px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg, var(--light-blue), var(--pale-blue), var(--gold));
+    opacity: 0.2;
+    border-radius: 2px;
+}
+
+/* ==============================================
+   DREAM CARDS
+   ============================================== */
+.dream-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.2rem;
+    padding: 1.2rem 1.5rem;
+    background: var(--glass-bg);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid var(--glass-border);
+    border-radius: 1.5rem;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    animation: cardSlideIn 0.6s ease-out forwards;
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+.dream-card:nth-child(1) { animation-delay: 0.05s; }
+.dream-card:nth-child(2) { animation-delay: 0.1s; }
+.dream-card:nth-child(3) { animation-delay: 0.15s; }
+.dream-card:nth-child(4) { animation-delay: 0.2s; }
+.dream-card:nth-child(5) { animation-delay: 0.25s; }
+.dream-card:nth-child(6) { animation-delay: 0.3s; }
+
+@keyframes cardSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.dream-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at 30% 30%, rgba(108, 99, 255, 0.05) 0%, transparent 60%);
+    opacity: 0;
+    transition: opacity 0.6s ease;
+    pointer-events: none;
+}
+
+.dream-card:hover {
+    transform: translateY(-4px) scale(1.01);
+    box-shadow: 0 12px 40px rgba(108, 99, 255, 0.15);
+    border-color: rgba(108, 99, 255, 0.2);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.dream-card:hover::before {
+    opacity: 1;
+}
+
+.dream-card.revealed {
+    border-color: rgba(108, 99, 255, 0.3);
+    background: rgba(108, 99, 255, 0.08);
+    box-shadow: 0 0 30px rgba(108, 99, 255, 0.08);
+}
+
+.dream-card.revealed::after {
+    content: '✨';
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    font-size: 1.2rem;
+    animation: sparklePulse 2s ease-in-out infinite;
+}
+
+@keyframes sparklePulse {
+    0%, 100% { transform: scale(1) rotate(0deg); opacity: 0.6; }
+    50% { transform: scale(1.3) rotate(180deg); opacity: 1; }
+}
+
+.dream-card.completed {
+    border-color: var(--gold);
+    background: rgba(251, 191, 36, 0.05);
+    box-shadow: 0 0 40px rgba(251, 191, 36, 0.05);
+}
+
+/* ==============================================
+   DREAM ICON
+   ============================================== */
+.dream-icon {
+    font-size: 2.2rem;
+    min-width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--glass-bg);
+    border-radius: 50%;
+    border: 1px solid var(--glass-border);
+    flex-shrink: 0;
+    transition: all 0.4s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.dream-card:hover .dream-icon {
+    transform: scale(1.1) rotate(-5deg);
+    border-color: rgba(108, 99, 255, 0.3);
+    box-shadow: 0 0 30px rgba(108, 99, 255, 0.1);
+}
+
+.dream-card.revealed .dream-icon {
+    border-color: var(--light-blue);
+    box-shadow: 0 0 30px rgba(108, 99, 255, 0.15);
+}
+
+/* ==============================================
+   DREAM CONTENT
+   ============================================== */
+.dream-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.dream-title {
+    font-family: var(--font-heading);
+    font-size: clamp(1rem, 1.8vw, 1.2rem);
+    font-weight: 600;
+    color: var(--text-light);
+    margin: 0 0 0.3rem 0;
+    letter-spacing: 0.02em;
+    transition: color 0.3s ease;
+}
+
+.dream-card.revealed .dream-title {
+    color: var(--pale-blue);
+}
+
+.dream-message {
+    font-size: clamp(0.85rem, 1.4vw, 0.95rem);
+    font-weight: 300;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin: 0.3rem 0 0.8rem 0;
+    font-style: italic;
+    padding: 0.5rem 0.8rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 0.8rem;
+    border-left: 2px solid var(--light-blue);
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    transform: translateY(-10px);
+}
+
+.dream-message.visible {
+    max-height: 200px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.dream-message.hidden {
+    display: none;
+}
+
+/* ==============================================
+   REVEAL BUTTON
+   ============================================== */
+.btn-reveal {
+    padding: 0.4rem 1.2rem;
+    font-size: clamp(0.7rem, 1.2vw, 0.8rem);
+    font-weight: 500;
+    font-family: var(--font-primary);
+    color: #ffffff;
+    background: linear-gradient(135deg, var(--light-blue), var(--accent-blue));
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+    box-shadow: 0 4px 16px rgba(108, 99, 255, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-reveal::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.15) 0%, transparent 60%);
+    opacity: 0;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    transform: scale(0.8);
+    pointer-events: none;
+}
+
+.btn-reveal:hover {
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 8px 24px rgba(108, 99, 255, 0.3);
+    background: linear-gradient(135deg, #7a73ff, var(--light-blue));
+}
+
+.btn-reveal:hover::before {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.btn-reveal:active {
+    transform: translateY(0px) scale(0.96);
+}
+
+.btn-reveal.revealed {
+    background: linear-gradient(135deg, #34d399, #10b981);
+    box-shadow: 0 4px 16px rgba(52, 211, 153, 0.2);
+}
+
+.btn-reveal.revealed:hover {
+    box-shadow: 0 8px 24px rgba(52, 211, 153, 0.3);
+}
+
+.btn-reveal:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.btn-reveal:disabled:hover {
+    transform: none;
+}
+
+/* ==============================================
+   DREAM COMPLETE SECTION
+   ============================================== */
+.dream-complete {
+    margin: 1.5rem 0 0.5rem 0;
+    padding: 1.5rem 2rem;
+    background: linear-gradient(135deg, rgba(108, 99, 255, 0.12), rgba(168, 164, 255, 0.05));
+    border: 1px solid rgba(251, 191, 36, 0.2);
+    border-radius: 2rem;
+    animation: dreamCompleteFadeIn 0.8s ease-out forwards;
+    box-shadow: 0 4px 24px rgba(108, 99, 255, 0.08);
+}
+
+.dream-complete.hidden {
+    display: none;
+}
+
+.dream-complete.visible {
+    display: block;
+}
+
+@keyframes dreamCompleteFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px) scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.dream-complete-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.complete-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    margin-bottom: 0.8rem;
+}
+
+.complete-icon {
+    font-size: 2.5rem;
+    animation: iconPulse 2s ease-in-out infinite;
+}
+
+@keyframes iconPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+}
+
+.complete-title {
+    font-family: var(--font-heading);
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(135deg, #fbbf24, #f59e0b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.complete-body {
+    padding: 0.5rem 0;
+}
+
+.complete-message {
+    font-size: clamp(1rem, 1.8vw, 1.2rem);
+    font-weight: 300;
+    color: var(--text-muted);
+    line-height: 1.8;
+    font-style: italic;
+    margin: 0;
+}
+
+.complete-decorations {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.8rem;
+}
+
+.complete-decorations .deco-emoji {
+    font-size: 1.2rem;
+    animation: floatEmoji 3s ease-in-out infinite;
+}
+
+.complete-decorations .deco-emoji:nth-child(2) { animation-delay: 0.5s; }
+.complete-decorations .deco-emoji:nth-child(3) { animation-delay: 1s; }
+.complete-decorations .deco-emoji:nth-child(4) { animation-delay: 1.5s; }
+.complete-decorations .deco-emoji:nth-child(5) { animation-delay: 2s; }
+
+@keyframes floatEmoji {
+    0%, 100% { transform: translateY(0) scale(1); }
+    50% { transform: translateY(-5px) scale(1.1); }
+}
+
+/* ==============================================
+   CONTINUE BUTTON
+   ============================================== */
+.btn-continue {
+    display: inline-block;
+    padding: 1rem 3.2rem;
+    font-size: clamp(1rem, 2.2vw, 1.3rem);
+    font-weight: 600;
+    font-family: var(--font-primary);
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    background: linear-gradient(135deg, var(--gold), #f59e0b);
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    box-shadow: 0 8px 28px rgba(251, 191, 36, 0.4), 0 4px 16px rgba(0, 0, 0, 0.15);
+    position: relative;
+    overflow: hidden;
+    margin-top: 1rem;
+    opacity: 0;
+    transform: scale(0.8);
+}
+
+.btn-continue::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.2) 0%, transparent 60%);
+    opacity: 0;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    transform: scale(0.8);
+    pointer-events: none;
+}
+
+.btn-continue:hover {
+    transform: translateY(-4px) scale(1.02) !important;
+    box-shadow: 0 14px 40px rgba(251, 191, 36, 0.6), 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-continue:hover::before {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.btn-continue:active {
+    transform: translateY(0px) scale(0.97) !important;
+}
+
+.btn-continue.hidden {
+    display: none;
+}
+
+.btn-continue.visible {
+    display: inline-block;
+    opacity: 1;
+    transform: scale(1);
+    animation: celebrationPop 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+@keyframes celebrationPop {
+    0% { opacity: 0; transform: scale(0.5) rotate(-5deg); }
+    60% { transform: scale(1.05) rotate(2deg); }
+    100% { opacity: 1; transform: scale(1) rotate(0deg); }
+}
+
+.btn-subtext {
+    display: block;
+    font-size: clamp(0.6rem, 1vw, 0.75rem);
+    font-weight: 300;
+    opacity: 0.8;
+    margin-top: 0.1rem;
+}
+
+/* ==============================================
+   DECORATIVE CONTAINERS
+   ============================================== */
+.sparkles {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.confetti-container {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 10;
+    overflow: hidden;
+}
+
+/* ==============================================
+   FOOTER
+   ============================================== */
+.dreams-footer {
+    position: relative;
+    z-index: 3;
+    padding: 1rem 1.5rem 1.5rem 1.5rem;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-message {
+    font-size: 0.85rem;
+    font-weight: 300;
+    color: var(--text-muted);
+    opacity: 0.5;
+    letter-spacing: 0.08em;
+    transition: opacity 0.4s ease;
+}
+
+.footer-message:hover {
+    opacity: 0.8;
+}
+
+/* ==============================================
+   ANIMATIONS
+   ============================================== */
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(30px) scale(0.97); }
+    100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes floatIn {
+    0% { opacity: 0; transform: scale(0.92) translateY(20px); }
+    100% { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+@keyframes shimmerTitle {
+    0% { opacity: 0.95; text-shadow: 0 2px 20px rgba(108, 99, 255, 0.3); }
+    100% { opacity: 1; text-shadow: 0 2px 40px rgba(108, 99, 255, 0.6), 0 0 80px rgba(108, 99, 255, 0.2); }
+}
+
+/* ==============================================
+   RESPONSIVE ADJUSTMENTS
+   ============================================== */
+
+@media (max-width: 768px) {
+    .dreams-content {
+        padding: 1.5rem 1.2rem;
+        border-radius: 2rem;
+        max-height: 90vh;
+    }
+
+    .dreams-hero::before {
+        font-size: 5rem;
+        top: 3%;
+        right: 5%;
+    }
+
+    .main-title {
+        font-size: 2.2rem;
+    }
+
+    .subtitle {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+
+    .dream-card {
+        padding: 1rem 1.2rem;
+        gap: 1rem;
+    }
+
+    .dream-icon {
+        font-size: 1.8rem;
+        min-width: 45px;
+        height: 45px;
+    }
+
+    .dreams-timeline::before {
+        left: 22px;
+    }
+
+    .dream-title {
+        font-size: 1rem;
+    }
+
+    .dream-message {
+        font-size: 0.85rem;
+    }
+
+    .btn-reveal {
+        font-size: 0.7rem;
+        padding: 0.3rem 1rem;
+    }
+
+    .btn-continue {
+        padding: 0.8rem 2.2rem;
+        font-size: 0.95rem;
+        border-radius: 50px;
+    }
+
+    .progress-indicator {
+        padding: 0.8rem 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .dream-complete {
+        padding: 1rem 1.2rem;
+        margin-top: 1rem;
+    }
+
+    .complete-title {
+        font-size: 1.3rem;
+    }
+
+    .complete-message {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .dreams-content {
+        padding: 1.2rem 0.8rem;
+        border-radius: 1.5rem;
+        max-height: 92vh;
+    }
+
+    .dreams-hero::before {
+        font-size: 3.5rem;
+        top: 2%;
+        right: 3%;
+    }
+
+    .main-title {
+        font-size: 1.8rem;
+    }
+
+    .subtitle {
+        font-size: 0.8rem;
+    }
+
+    .dream-card {
+        padding: 0.8rem 1rem;
+        gap: 0.8rem;
+        border-radius: 1rem;
+    }
+
+    .dream-icon {
+        font-size: 1.5rem;
+        min-width: 38px;
+        height: 38px;
+    }
+
+    .dreams-timeline::before {
+        left: 18px;
+    }
+
+    .dream-title {
+        font-size: 0.85rem;
+    }
+
+    .dream-message {
+        font-size: 0.75rem;
+        padding: 0.3rem 0.6rem;
+    }
+
+    .btn-reveal {
+        font-size: 0.65rem;
+        padding: 0.25rem 0.8rem;
+    }
+
+    .progress-text {
+        font-size: 0.8rem;
+    }
+
+    .progress-count {
+        font-size: 1em;
+    }
+
+    .btn-continue {
+        padding: 0.7rem 1.8rem;
+        font-size: 0.85rem;
+        border-radius: 40px;
+    }
+
+    .dream-complete {
+        padding: 0.8rem 0.8rem;
+        border-radius: 1.2rem;
+    }
+
+    .complete-title {
+        font-size: 1.1rem;
+    }
+
+    .complete-message {
+        font-size: 0.8rem;
+    }
+
+    .complete-icon {
+        font-size: 2rem;
+    }
+
+    .complete-decorations .deco-emoji {
+        font-size: 1rem;
+    }
+}
+
+/* ==============================================
+   REDUCED MOTION PREFERENCE
+   ============================================== */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .dreams-hero {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
+
+    .dreams-content {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
+
+    .dreams-hero::before {
+        animation: none;
+    }
+
+    .dream-card {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
+
+    .dream-card:hover {
+        transform: none;
+    }
+
+    .btn-reveal:hover {
+        transform: none;
+    }
+
+    .btn-continue {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    .btn-continue:hover {
+        transform: none !important;
+    }
+
+    .dream-complete {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
+
+    .complete-icon {
+        animation: none;
+    }
+
+    .complete-decorations .deco-emoji {
+        animation: none;
+    }
+
+    .floating-stars .star {
+        animation: none;
+    }
+
+    .progress-count.pop {
+        animation: none;
+    }
+
+    .dream-card.revealed::after {
+        animation: none;
+    }
+}

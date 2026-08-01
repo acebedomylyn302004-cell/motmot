@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌙 Our Future Together - Happy 5th Monthsary 💙</title>
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="page8.css">
+    <!-- External JavaScript -->
+    <script src="page8.js" defer></script>
+</head>
+<body>
+    <!-- ============================================ -->
+    <!-- OUR FUTURE TOGETHER - Full Screen Section    -->
+    <!-- ============================================ -->
+    <section class="dreams-hero" id="dreamsHero">
+        
+        <!-- ========================================== -->
+        <!-- DECORATIVE BACKGROUND ELEMENTS             -->
+        <!-- ========================================== -->
+        <div class="floating-stars" id="floatingStars" aria-hidden="true"></div>
+        <div class="floating-hearts" id="floatingHearts" aria-hidden="true"></div>
+
+        <!-- ========================================== -->
+        <!-- MAIN CONTENT CONTAINER                    -->
+        <!-- ========================================== -->
+        <div class="dreams-content">
+
+            <!-- Main Title -->
+            <h1 class="main-title">🌙 Our Future Together</h1>
+
+            <!-- Subtitle -->
+            <p class="subtitle">
+                "Every dream feels more beautiful because you're in it."
+            </p>
+
+            <!-- ========================================== -->
+            <!-- PROGRESS INDICATOR                        -->
+            <!-- ========================================== -->
+            <div class="progress-indicator">
+                <p class="progress-text">
+                    🌟 Dreams Revealed
+                    <span class="progress-count" id="progressCount">0</span>
+                    <span class="progress-total">/ 6</span>
+                </p>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+            </div>
+
+            <!-- ========================================== -->
+            <!-- DREAMS TIMELINE                           -->
+            <!-- ========================================== -->
+            <div class="dreams-timeline" id="dreamsTimeline">
+                
+                <!-- ========================================== -->
+                <!-- DREAM CARD 1 - Stay Together              -->
+                <!-- ========================================== -->
+                <div class="dream-card" id="dreamCard1" data-dream="1">
+                    <div class="dream-icon">❤️</div>
+                    <div class="dream-content">
+                        <h3 class="dream-title">Stay Together</h3>
+                        <!-- REPLACE this message with your own dream message -->
+                        <p class="dream-message hidden" id="dreamMessage1">
+                            "No matter what challenges come our way, I hope we always choose each other."
+                        </p>
+                        <button class="btn-reveal" data-dream="1">Reveal Dream 💙</button>
+                    </div>
+                </div>
+
+                <!-- ========================================== -->
+                <!-- DREAM CARD 2 - Our Dream Home             -->
+                <!-- ========================================== -->
+                <div class="dream-card" id="dreamCard2" data-dream="2">
+                    <div class="dream-icon">🏡</div>
+                    <div class="dream-content">
+                        <h3 class="dream-title">Our Dream Home</h3>
+                        <!-- REPLACE this message with your own dream message -->
+                        <p class="dream-message hidden" id="dreamMessage2">
+                            "One day we'll have our own peaceful little home filled with love."
+                        </p>
+                        <button class="btn-reveal" data-dream="2">Reveal Dream 💙</button>
+                    </div>
+                </div>
+
+                <!-- ========================================== -->
+                <!-- DREAM CARD 3 - Travel Together             -->
+                <!-- ========================================== -->
+                <div class="dream-card" id="dreamCard3" data-dream="3">
+                    <div class="dream-icon">✈️</div>
+                    <div class="dream-content">
+                        <h3 class="dream-title">Travel Together</h3>
+                        <!-- REPLACE this message with your own dream message -->
+                        <p class="dream-message hidden" id="dreamMessage3">
+                            "I hope we can explore beautiful places and create unforgettable memories together."
+                        </p>
+                        <button class="btn-reveal" data-dream="3">Reveal Dream 💙</button>
+                    </div>
+                </div>
+
+                <!-- ========================================== -->
+                <!-- DREAM CARD 4 - More Monthsaries           -->
+                <!-- ========================================== -->
+                <div class="dream-card" id="dreamCard4" data-dream="4">
+                    <div class="dream-icon">🎂</div>
+                    <div class="dream-content">
+                        <h3 class="dream-title">More Monthsaries</h3>
+                        <!-- REPLACE this message with your own dream message -->
+                        <p class="dream-message hidden" id="dreamMessage4">
+                            "I can't wait to celebrate many more monthsaries with you."
+                        </p>
+                        <button class="btn-reveal" data-dream="4">Reveal Dream 💙</button>
+                    </div>
+                </div>
+
+                <!-- ========================================== -->
+                <!-- DREAM CARD 5 - Forever                    -->
+                <!-- ========================================== -->
+                <div class="dream-card" id="dreamCard5" data-dream="5">
+                    <div class="dream-icon">💍</div>
+                    <div class="dream-content">
+                        <h3 class="dream-title">Forever</h3>
+                        <!-- REPLACE this message with your own dream message -->
+                        <p class="dream-message hidden" id="dreamMessage5">
+                            "I sincerely hope this beautiful journey leads us to forever."
+                        </p>
+                        <button class="btn-reveal" data-dream="5">Reveal Dream 💙</button>
+                    </div>
+                </div>
+
+                <!-- ========================================== -->
+                <!-- DREAM CARD 6 - Endless Happiness          -->
+                <!-- ========================================== -->
+                <div class="dream-card" id="dreamCard6" data-dream="6">
+                    <div class="dream-icon">🌟</div>
+                    <div class="dream-content">
+                        <h3 class="dream-title">Endless Happiness</h3>
+                        <!-- REPLACE this message with your own dream message -->
+                        <p class="dream-message hidden" id="dreamMessage6">
+                            "I pray that our smiles, laughter, and love never fade."
+                        </p>
+                        <button class="btn-reveal" data-dream="6">Reveal Dream 💙</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ========================================== -->
+            <!-- HIDDEN DREAM COMPLETE SECTION             -->
+            <!-- ========================================== -->
+            <div class="dream-complete hidden" id="dreamComplete">
+                <div class="dream-complete-content">
+                    <div class="complete-header">
+                        <span class="complete-icon">💙</span>
+                        <h2 class="complete-title">Dream Complete</h2>
+                    </div>
+                    <div class="complete-body">
+                        <p class="complete-message">
+                            "Every dream becomes even more meaningful because I get to dream it with you."
+                        </p>
+                        <div class="complete-decorations">
+                            <span class="deco-emoji">🌟</span>
+                            <span class="deco-emoji">💕</span>
+                            <span class="deco-emoji">✨</span>
+                            <span class="deco-emoji">🌙</span>
+                            <span class="deco-emoji">💙</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================================== -->
+            <!-- CONTINUE BUTTON - Navigates to page9.html -->
+            <!-- ========================================== -->
+            <a href="page9.html" class="btn-continue hidden" id="continueButton">
+                Continue Our Journey 💙 ➡
+                <span class="btn-subtext">Next: More Surprises Await!</span>
+            </a>
+
+        </div>
+
+        <!-- ========================================== -->
+        <!-- DECORATIVE ELEMENTS CONTAINERS             -->
+        <!-- ========================================== -->
+        <div class="sparkles" id="sparkles" aria-hidden="true"></div>
+        <div class="confetti-container" id="confettiContainer" aria-hidden="true"></div>
+        
+    </section>
+
+    <!-- ========================================== -->
+    <!-- FOOTER                                     -->
+    <!-- ========================================== -->
+    <footer class="dreams-footer">
+        <p class="footer-message">Made with 💙 for you.</p>
+    </footer>
+</body>
+</html>

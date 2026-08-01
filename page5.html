@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎁 Mystery Gift Box - Happy 5th Monthsary 💙</title>
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="page5.css">
+    <!-- External JavaScript -->
+    <script src="page5.js" defer></script>
+</head>
+<body>
+    <!-- ============================================ -->
+    <!-- MYSTERY GIFT BOX - Full Screen Hero Section  -->
+    <!-- ============================================ -->
+    <section class="gift-hero" id="giftHero">
+        
+        <!-- ========================================== -->
+        <!-- MAIN CONTENT CONTAINER                    -->
+        <!-- ========================================== -->
+        <div class="gift-content">
+
+            <!-- Main Title -->
+            <h1 class="main-title">🎁 Mystery Gift Box</h1>
+
+            <!-- Subtitle -->
+            <p class="subtitle">
+                "Congratulations! You unlocked a special surprise. But first... catch the gift! 🤭"
+            </p>
+
+            <!-- ========================================== -->
+            <!-- GIFT INSTRUCTION TEXT                     -->
+            <!-- ========================================== -->
+            <div class="instruction-container">
+                <p class="gift-instruction" id="giftInstruction">
+                    🎯 Click the gift if you can catch it! 😆
+                </p>
+                <p class="gift-hint" id="giftHint">
+                    💡 Tip: It moves around! Be quick! ⚡
+                </p>
+                <div class="move-counter" id="moveCounter">
+                    <span>🎯 Catches: </span>
+                    <span class="catch-count" id="catchCount">0</span>
+                </div>
+            </div>
+
+            <!-- ========================================== -->
+            <!-- GIFT BOX CONTAINER                        -->
+            <!-- ========================================== -->
+            <div class="gift-container" id="giftContainer">
+                <div class="gift-box" id="giftBox">
+                    <!-- Gift Box Lid -->
+                    <div class="gift-lid" id="giftLid">
+                        <div class="gift-lid-bow">
+                            <span class="bow-ribbon bow-left"></span>
+                            <span class="bow-ribbon bow-right"></span>
+                            <span class="bow-center"></span>
+                        </div>
+                    </div>
+                    
+                    <!-- Gift Box Body -->
+                    <div class="gift-body" id="giftBody">
+                        <div class="gift-ribbon ribbon-horizontal"></div>
+                        <div class="gift-ribbon ribbon-vertical"></div>
+                        <div class="gift-label" id="giftLabel">💙</div>
+                        <div class="gift-shine"></div>
+                    </div>
+
+                    <!-- Hover Sparkle Effect -->
+                    <div class="gift-sparkle-container" id="giftSparkleContainer"></div>
+                </div>
+            </div>
+
+            <!-- ========================================== -->
+            <!-- HIDDEN CELEBRATION MESSAGE                -->
+            <!-- ========================================== -->
+            <div class="celebration-message hidden" id="celebrationMessage">
+                <p class="celebration-text">
+                    🎉 You found the surprise! 💙
+                </p>
+                <p class="celebration-subtext">
+                    "Here are your special rewards, Hubby! You deserve every single one! ❤️"
+                </p>
+                <div class="celebration-stats">
+                    <span class="stat-badge">🏆 Legendary Catch!</span>
+                    <span class="stat-badge">💎 5th Monthsary Special</span>
+                </div>
+            </div>
+
+            <!-- ========================================== -->
+            <!-- REWARDS SECTION (hidden until gift opened) -->
+            <!-- ========================================== -->
+            <div class="rewards-section hidden" id="rewardsSection">
+                <div class="rewards-header">
+                    <h2 class="rewards-title">🎁 Your Surprise Rewards</h2>
+                    <p class="rewards-subtitle">Unlocked just for you, Hubby! 💙</p>
+                </div>
+                
+                <div class="rewards-grid" id="rewardsGrid">
+                    
+                    <!-- Reward Card 1 - Chocolate -->
+                    <div class="reward-card" id="rewardCard1" data-reward="1">
+                        <div class="reward-icon">🍫</div>
+                        <h3 class="reward-name">Chocolate</h3>
+                        <p class="reward-message">
+                            "A little sweetness for the sweetest hubby."
+                        </p>
+                        <div class="reward-unlock hidden">✨ Unlocked!</div>
+                        <div class="reward-fun-fact hidden">💡 Fun Fact: Dark chocolate boosts happiness! ❤️</div>
+                    </div>
+
+                    <!-- Reward Card 2 - Flowers -->
+                    <div class="reward-card" id="rewardCard2" data-reward="2">
+                        <div class="reward-icon">🌹</div>
+                        <h3 class="reward-name">Flowers</h3>
+                        <p class="reward-message">
+                            "These flowers are for my precious hubby."
+                        </p>
+                        <div class="reward-unlock hidden">✨ Unlocked!</div>
+                        <div class="reward-fun-fact hidden">💡 Fun Fact: Roses symbolize love and passion! 🌹</div>
+                    </div>
+
+                    <!-- Reward Card 3 - Hugs Coupon -->
+                    <div class="reward-card" id="rewardCard3" data-reward="3">
+                        <div class="reward-icon">🤗</div>
+                        <h3 class="reward-name">Unlimited Hugs Coupon</h3>
+                        <p class="reward-message">
+                            "Redeem anytime. No expiration."
+                        </p>
+                        <div class="reward-unlock hidden">✨ Unlocked!</div>
+                        <div class="reward-fun-fact hidden">💡 Fun Fact: Hugs release oxytocin - the love hormone! 💕</div>
+                    </div>
+
+                    <!-- Reward Card 4 - Kisses Coupon -->
+                    <div class="reward-card" id="rewardCard4" data-reward="4">
+                        <div class="reward-icon">😘</div>
+                        <h3 class="reward-name">Unlimited Kisses Coupon</h3>
+                        <p class="reward-message">
+                            "Unlimited usage. Lifetime validity."
+                        </p>
+                        <div class="reward-unlock hidden">✨ Unlocked!</div>
+                        <div class="reward-fun-fact hidden">💡 Fun Fact: Kissing burns calories and boosts immunity! 😘</div>
+                    </div>
+
+                </div>
+
+                <!-- Special Bonus Message -->
+                <div class="bonus-message hidden" id="bonusMessage">
+                    <div class="bonus-content">
+                        <span class="bonus-icon">🎊</span>
+                        <p class="bonus-text">🎉 BONUS: You've unlocked the <strong>"Best Hubby Ever"</strong> achievement! 🏆</p>
+                    </div>
+                </div>
+
+                <!-- ========================================== -->
+                <!-- CONTINUE BUTTON - Navigates to page6.html -->
+                <!-- ========================================== -->
+                <a href="page6.html" class="btn-continue hidden" id="continueButton">
+                    Continue Our Journey 💙 ➡
+                    <span class="btn-subtext">Next: More Surprises Await!</span>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- ========================================== -->
+        <!-- DECORATIVE ELEMENTS CONTAINERS             -->
+        <!-- ========================================== -->
+        <div class="floating-hearts" id="floatingHearts" aria-hidden="true"></div>
+        <div class="sparkles" id="sparkles" aria-hidden="true"></div>
+        <div class="confetti-container" id="confettiContainer" aria-hidden="true"></div>
+        <div class="decorative-elements" id="decorativeElements" aria-hidden="true"></div>
+        
+    </section>
+
+    <!-- ========================================== -->
+    <!-- FOOTER                                     -->
+    <!-- ========================================== -->
+    <footer class="gift-footer">
+        <p class="footer-message">Made with 💙 for you.</p>
+    </footer>
+</body>
+</html>

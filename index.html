@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Happy 5th Monthsary Hubby 💙</title>
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- External JavaScript -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- SVG Heart Clip Path - Needed for the heart shape to work properly -->
+    <!-- This SVG is hidden and only used for the clip-path reference -->
+    <svg class="heart-clip-svg" aria-hidden="true" width="0" height="0">
+        <defs>
+            <clipPath id="heartClip" clipPathUnits="objectBoundingBox">
+                <path d="M0.5,0.95 C0.25,0.75 0,0.55 0,0.3 C0,0.1 0.15,0 0.3,0 C0.4,0 0.5,0.08 0.5,0.2 C0.5,0.08 0.6,0 0.7,0 C0.85,0 1,0.1 1,0.3 C1,0.55 0.75,0.75 0.5,0.95Z" />
+            </clipPath>
+        </defs>
+    </svg>
+
+    <!-- ============================================ -->
+    <!-- HERO SECTION – full viewport height           -->
+    <!-- ============================================ -->
+    <header class="hero" id="hero">
+        <!-- Main content container -->
+        <div class="hero-content">
+
+            <!-- Large title -->
+            <h1 class="main-title">Happy 5th Monthsary Hubby 💙</h1>
+
+            <!-- Subtitle / romantic message -->
+            <p class="subtitle">
+                "I made this little surprise just for you. I hope this journey makes you smile."
+            </p>
+
+            <!-- Heart-shaped frame for couple picture -->
+            <!-- REPLACE the src attribute with your actual couple photo -->
+            <div class="heart-frame">
+                <img 
+                    src="picture.jpg" 
+                    alt="Our couple picture – replace with your own image"
+                    class="couple-photo"
+                    id="couplePhoto"
+                >
+            </div>
+
+            <!-- Short romantic sentence below the picture -->
+            <!-- REPLACE the text content with your own personal message -->
+            <p class="romantic-sentence" id="romanticSentence">
+                Every moment with you feels like a dream come true.
+            </p>
+
+            <!-- Large CTA button – navigates to page2.html -->
+            <a href="page2.html" class="btn-start" id="startButton">
+                Start Our Love Journey 💙
+            </a>
+
+            <!-- Small hint below the button -->
+            <p class="hint-text">
+                Click the button to begin.
+            </p>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- DECORATIVE CONTAINERS (animated later)     -->
+        <!-- ========================================== -->
+        <div class="floating-hearts" id="floatingHearts" aria-hidden="true"></div>
+        <div class="sparkles" id="sparkles" aria-hidden="true"></div>
+        <div class="decorative-elements" id="decorativeElements" aria-hidden="true"></div>
+    </header>
+
+    <!-- ========================================== -->
+    <!-- FOOTER (optional, semantic)                -->
+    <!-- ========================================== -->
+    <footer class="hero-footer">
+        <p class="footer-message">Made with 💙 for you.</p>
+    </footer>
+</body>
+</html>

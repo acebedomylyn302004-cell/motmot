@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>📸 Our Beautiful Memories - Happy 5th Monthsary 💙</title>
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="page6.css">
+    <!-- External JavaScript -->
+    <script src="page6.js" defer></script>
+</head>
+<body>
+    <!-- ============================================ -->
+    <!-- OUR BEAUTIFUL MEMORIES - Full Screen Section -->
+    <!-- ============================================ -->
+    <section class="memories-hero" id="memoriesHero">
+        
+        <!-- ========================================== -->
+        <!-- STARFIELD BACKGROUND                      -->
+        <!-- ========================================== -->
+        <div class="stars" id="stars" aria-hidden="true">
+            <div class="star" style="--i:1"></div>
+            <div class="star" style="--i:2"></div>
+            <div class="star" style="--i:3"></div>
+            <div class="star" style="--i:4"></div>
+            <div class="star" style="--i:5"></div>
+            <div class="star" style="--i:6"></div>
+            <div class="star" style="--i:7"></div>
+            <div class="star" style="--i:8"></div>
+            <div class="star" style="--i:9"></div>
+            <div class="star" style="--i:10"></div>
+            <div class="star" style="--i:11"></div>
+            <div class="star" style="--i:12"></div>
+            <div class="star" style="--i:13"></div>
+            <div class="star" style="--i:14"></div>
+            <div class="star" style="--i:15"></div>
+            <div class="star" style="--i:16"></div>
+            <div class="star" style="--i:17"></div>
+            <div class="star" style="--i:18"></div>
+            <div class="star" style="--i:19"></div>
+            <div class="star" style="--i:20"></div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- FAIRY LIGHTS                              -->
+        <!-- ========================================== -->
+        <div class="fairy-lights" id="fairyLights">
+            <div class="fairy-string" id="fairyString1">
+                <span class="fairy-bulb" style="--delay:0s"></span>
+                <span class="fairy-bulb" style="--delay:0.3s"></span>
+                <span class="fairy-bulb" style="--delay:0.6s"></span>
+                <span class="fairy-bulb" style="--delay:0.9s"></span>
+                <span class="fairy-bulb" style="--delay:1.2s"></span>
+                <span class="fairy-bulb" style="--delay:1.5s"></span>
+                <span class="fairy-bulb" style="--delay:1.8s"></span>
+                <span class="fairy-bulb" style="--delay:2.1s"></span>
+                <span class="fairy-bulb" style="--delay:2.4s"></span>
+                <span class="fairy-bulb" style="--delay:2.7s"></span>
+                <span class="fairy-bulb" style="--delay:3.0s"></span>
+                <span class="fairy-bulb" style="--delay:3.3s"></span>
+            </div>
+            <div class="fairy-string" id="fairyString2">
+                <span class="fairy-bulb" style="--delay:0.2s"></span>
+                <span class="fairy-bulb" style="--delay:0.5s"></span>
+                <span class="fairy-bulb" style="--delay:0.8s"></span>
+                <span class="fairy-bulb" style="--delay:1.1s"></span>
+                <span class="fairy-bulb" style="--delay:1.4s"></span>
+                <span class="fairy-bulb" style="--delay:1.7s"></span>
+                <span class="fairy-bulb" style="--delay:2.0s"></span>
+                <span class="fairy-bulb" style="--delay:2.3s"></span>
+                <span class="fairy-bulb" style="--delay:2.6s"></span>
+                <span class="fairy-bulb" style="--delay:2.9s"></span>
+                <span class="fairy-bulb" style="--delay:3.2s"></span>
+            </div>
+            <div class="fairy-string" id="fairyString3">
+                <span class="fairy-bulb" style="--delay:0.4s"></span>
+                <span class="fairy-bulb" style="--delay:0.7s"></span>
+                <span class="fairy-bulb" style="--delay:1.0s"></span>
+                <span class="fairy-bulb" style="--delay:1.3s"></span>
+                <span class="fairy-bulb" style="--delay:1.6s"></span>
+                <span class="fairy-bulb" style="--delay:1.9s"></span>
+                <span class="fairy-bulb" style="--delay:2.2s"></span>
+                <span class="fairy-bulb" style="--delay:2.5s"></span>
+                <span class="fairy-bulb" style="--delay:2.8s"></span>
+                <span class="fairy-bulb" style="--delay:3.1s"></span>
+                <span class="fairy-bulb" style="--delay:3.4s"></span>
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- MAIN CONTENT CONTAINER                    -->
+        <!-- ========================================== -->
+        <div class="memories-content">
+
+            <!-- Main Title -->
+            <h1 class="main-title">📸 Our Beautiful Memories</h1>
+
+            <!-- Subtitle -->
+            <p class="subtitle">
+                "Every picture tells a story, and every story reminds me how lucky I am to have you. ❤️"
+            </p>
+
+            <!-- Memory Counter -->
+            <div class="memory-counter" id="memoryCounter">
+                <span class="counter-label">💙 Memories Viewed:</span>
+                <span class="counter-number" id="counterNumber">0</span>
+                <span class="counter-total">/ 8</span>
+            </div>
+
+            <!-- ========================================== -->
+            <!-- POLAROID GALLERY                          -->
+            <!-- ========================================== -->
+            <div class="polaroid-gallery" id="polaroidGallery">
+                
+                <!-- Polaroid 1 - Our First Picture -->
+                <div class="polaroid" id="polaroid1" data-memory="1">
+                    <div class="polaroid-clip"></div>
+                    <div class="polaroid-photo">
+                        <img src="memory1.jpg" alt="Our First Picture" class="polaroid-image">
+                        <div class="polaroid-overlay">
+                            <span class="polaroid-icon">❤️</span>
+                            <span class="polaroid-view">Click to View</span>
+                        </div>
+                    </div>
+                    <div class="polaroid-caption">
+                        <p class="polaroid-title">Our First Picture</p>
+                        <p class="polaroid-date">❤️ 5th Monthsary</p>
+                    </div>
+                </div>
+
+                <!-- Polaroid 2 - Cute Moments -->
+                <div class="polaroid" id="polaroid2" data-memory="2">
+                    <div class="polaroid-clip"></div>
+                    <div class="polaroid-photo">
+                        <img src="memory2.jpg" alt="Cute Moments" class="polaroid-image">
+                        <div class="polaroid-overlay">
+                            <span class="polaroid-icon">💕</span>
+                            <span class="polaroid-view">Click to View</span>
+                        </div>
+                    </div>
+                    <div class="polaroid-caption">
+                        <p class="polaroid-title">Cute Moments</p>
+                        <p class="polaroid-date">💕 5th Monthsary</p>
+                    </div>
+                </div>
+
+                <!-- Polaroid 3 - Video Call Nights -->
+                <div class="polaroid" id="polaroid3" data-memory="3">
+                    <div class="polaroid-clip"></div>
+                    <div class="polaroid-photo">
+                        <img src="memory3.jpg" alt="Video Call Nights" class="polaroid-image">
+                        <div class="polaroid-overlay">
+                            <span class="polaroid-icon">📱</span>
+                            <span class="polaroid-view">Click to View</span>
+                        </div>
+                    </div>
+                    <div class="polaroid-caption">
+                        <p class="polaroid-title">Video Call Nights</p>
+                        <p class="polaroid-date">📱 5th Monthsary</p>
+                    </div>
+                </div>
+
+                <!-- Polaroid 4 - Random Selfie -->
+                <div class="polaroid" id="polaroid4" data-memory="4">
+                    <div class="polaroid-clip"></div>
+                    <div class="polaroid-photo">
+                        <img src="memory4.jpg" alt="Random Selfie" class="polaroid-image">
+                        <div class="polaroid-overlay">
+                            <span class="polaroid-icon">🤳</span>
+                            <span class="polaroid-view">Click to View</span>
+                        </div>
+                    </div>
+                    <div class="polaroid-caption">
+                        <p class="polaroid-title">Random Selfie</p>
+                        <p class="polaroid-date">🤳 5th Monthsary</p>
+                    </div>
+                </div>
+
+                <!-- Polaroid 5 - Favorite Memory -->
+                <div class="polaroid" id="polaroid5" data-memory="5">
+                    <div class="polaroid-clip"></div>
+                    <div class="polaroid-photo">
+                        <img src="memory5.jpg" alt="Favorite Memory" class="polaroid-image">
+                        <div class="polaroid-overlay">
+                            <span class="polaroid-icon">⭐</span>
+                            <span class="polaroid-view">Click to View</span>
+                        </div>
+                    </div>
+                    <div class="polaroid-caption">
+                        <p class="polaroid-title">Favorite Memory</p>
+                        <p class="polaroid-date">⭐ 5th Monthsary</p>
+                    </div>
+                </div>
+
+                <!-- Polaroid 6 - Happy Day Together -->
+                <div class="polaroid" id="polaroid6" data-memory="6">
+                    <div class="polaroid-clip"></div>
+                    <div class="polaroid-photo">
+                        <img src="memory6.jpg" alt="Happy Day Together" class="polaroid-image">
+                        <div class="polaroid-overlay">
+                            <span class="polaroid-icon">😊</span>
+                            <span class="polaroid-view">Click to View</span>
+                        </div>
+                    </div>
+                    <div class="polaroid-caption">
+                        <p class="polaroid-title">Happy Day Together</p>
+                        <p class="polaroid-date">😊 5th Monthsary</p>
+                    </div>
+                </div>
+
+                <!-- Polaroid 7 - Laughing Together -->
+                <div class="polaroid" id="polaroid7" data-memory="7">
+                    <div class="polaroid-clip"></div>
+                    <div class="polaroid-photo">
+                        <img src="memory7.jpg" alt="Laughing Together" class="polaroid-image">
+                        <div class="polaroid-overlay">
+                            <span class="polaroid-icon">😂</span>
+                            <span class="polaroid-view">Click to View</span>
+                        </div>
+                    </div>
+                    <div class="polaroid-caption">
+                        <p class="polaroid-title">Laughing Together</p>
+                        <p class="polaroid-date">😂 5th Monthsary</p>
+                    </div>
+                </div>
+
+                <!-- Polaroid 8 - Forever Starts Here -->
+                <div class="polaroid" id="polaroid8" data-memory="8">
+                    <div class="polaroid-clip"></div>
+                    <div class="polaroid-photo">
+                        <img src="memory8.jpg" alt="Forever Starts Here" class="polaroid-image">
+                        <div class="polaroid-overlay">
+                            <span class="polaroid-icon">💍</span>
+                            <span class="polaroid-view">Click to View</span>
+                        </div>
+                    </div>
+                    <div class="polaroid-caption">
+                        <p class="polaroid-title">Forever Starts Here</p>
+                        <p class="polaroid-date">💍 5th Monthsary</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ========================================== -->
+            <!-- SCRAPBOOK MODAL - PORTRAIT/SMARTPHONE LAYOUT -->
+            <!-- ========================================== -->
+            <div class="scrapbook-modal hidden" id="scrapbookModal">
+                <div class="modal-overlay" id="modalOverlay"></div>
+                <div class="modal-content" id="modalContent">
+                    <button class="modal-close" id="modalClose">✕</button>
+                    
+                    <div class="modal-scrapbook">
+                        <div class="scrapbook-page">
+                            <!-- Left: Portrait Photo Frame -->
+                            <div class="scrapbook-left">
+                                <div class="scrapbook-photo-frame">
+                                    <img src="memory1.jpg" alt="Memory Title" class="scrapbook-image" id="modalImage">
+                                    <div class="scrapbook-tape tape-top-left"></div>
+                                    <div class="scrapbook-tape tape-bottom-right"></div>
+                                    <div class="scrapbook-tape tape-top-right"></div>
+                                    <div class="scrapbook-tape tape-bottom-left"></div>
+                                    <!-- Smartphone frame effect -->
+                                    <div class="phone-frame">
+                                        <div class="phone-notch"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Right: Memory Details -->
+                            <div class="scrapbook-right">
+                                <div class="scrapbook-header">
+                                    <span class="scrapbook-icon" id="modalIcon">💙</span>
+                                    <h2 class="scrapbook-title" id="modalTitle">Memory Title</h2>
+                                </div>
+                                <div class="scrapbook-date" id="modalDate">💙 5th Monthsary</div>
+                                <div class="scrapbook-divider"></div>
+                                <div class="scrapbook-message">
+                                    <p class="memory-description" id="modalDescription">
+                                        "This is a special memory I want to remember forever. I'll replace this text with my favorite memory with Hubby. ❤️"
+                                    </p>
+                                    <p class="memory-edit-hint">✏️ Click to edit this memory</p>
+                                </div>
+                                <div class="scrapbook-sticker">
+                                    <span class="sticker">❤️</span>
+                                    <span class="sticker">✨</span>
+                                    <span class="sticker">💙</span>
+                                    <span class="sticker">📸</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================================== -->
+            <!-- SPECIAL MEMORY SECTION                    -->
+            <!-- ========================================== -->
+            <div class="special-memory hidden" id="specialMemory">
+                <div class="special-memory-content">
+                    <div class="special-memory-header">
+                        <span class="special-icon">💙</span>
+                        <h2 class="special-title">My Favorite Memory</h2>
+                    </div>
+                    <div class="special-memory-body">
+                        <div class="special-message-container">
+                            <p class="special-text" id="specialText">
+                                "This section is reserved for my most unforgettable memory with my hubby. I will replace this text later."
+                            </p>
+                            <p class="special-edit-hint">✏️ Click to edit this special memory</p>
+                        </div>
+                        <div class="special-decorations">
+                            <span class="deco-emoji">🌸</span>
+                            <span class="deco-emoji">💕</span>
+                            <span class="deco-emoji">✨</span>
+                            <span class="deco-emoji">🌹</span>
+                            <span class="deco-emoji">💙</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================================== -->
+            <!-- CONTINUE BUTTON - Navigates to page7.html -->
+            <!-- ========================================== -->
+            <a href="page7.html" class="btn-continue" id="continueButton">
+                Continue Our Journey 💙 ➡
+                <span class="btn-subtext">Next: More Surprises Await!</span>
+            </a>
+
+        </div>
+
+        <!-- ========================================== -->
+        <!-- DECORATIVE ELEMENTS CONTAINERS             -->
+        <!-- ========================================== -->
+        <div class="floating-hearts" id="floatingHearts" aria-hidden="true"></div>
+        <div class="sparkles" id="sparkles" aria-hidden="true"></div>
+        <div class="confetti-container" id="confettiContainer" aria-hidden="true"></div>
+        
+    </section>
+
+    <!-- ========================================== -->
+    <!-- FOOTER                                     -->
+    <!-- ========================================== -->
+    <footer class="memories-footer">
+        <p class="footer-message">Made with 💙 for you.</p>
+    </footer>
+</body>
+</html>

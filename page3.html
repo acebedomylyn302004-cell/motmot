@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>🌸 Our Love Garden 💙 - Happy 5th Monthsary</title>
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="page3.css">
+    <!-- External JavaScript -->
+    <script src="page3.js" defer></script>
+</head>
+<body>
+    <!-- ============================================ -->
+    <!-- OUR LOVE GARDEN - Full Screen Hero Section   -->
+    <!-- ============================================ -->
+    <section class="garden-hero" id="gardenHero">
+        
+        <!-- ========================================== -->
+        <!-- MAIN CONTENT CONTAINER                    -->
+        <!-- ========================================== -->
+        <div class="garden-content">
+
+            <!-- Main Title -->
+            <h1 class="main-title">🌸 Our Love Garden 💙</h1>
+
+            <!-- Subtitle -->
+            <p class="subtitle">
+                "Every flower has a special meaning, just like every moment we've shared together."
+            </p>
+
+            <!-- ========================================== -->
+            <!-- FLOWER CARDS GRID                         -->
+            <!-- ========================================== -->
+            <div class="flowers-grid" id="flowersGrid">
+                
+                <!-- ========================================== -->
+                <!-- FLOWER CARD 1 - Blue Rose                -->
+                <!-- ========================================== -->
+                <div class="flower-card" id="flowerCard1" data-flower="blue-rose">
+                    <div class="flower-icon">
+                        <!-- REPLACE with actual flower image -->
+                        <img src="blue-rose.jpg" alt="Blue Rose" class="flower-image">
+                    </div>
+                    <h3 class="flower-name">Blue Rose</h3>
+                    <button class="btn-discover" id="discoverBtn1" data-flower="1">
+                        Click to Discover
+                    </button>
+                    <div class="flower-meaning hidden" id="flowerMeaning1">
+                        <p class="meaning-text">
+                            "You are one of a kind. My love for you is rare and unique."
+                        </p>
+                    </div>
+                </div>
+
+                <!-- ========================================== -->
+                <!-- FLOWER CARD 2 - White Tulip               -->
+                <!-- ========================================== -->
+                <div class="flower-card" id="flowerCard2" data-flower="white-tulip">
+                    <div class="flower-icon">
+                        <!-- REPLACE with actual flower image -->
+                        <img src="white-tulips.jpg" alt="White Tulip" class="flower-image">
+                    </div>
+                    <h3 class="flower-name">White Tulip</h3>
+                    <button class="btn-discover" id="discoverBtn2" data-flower="2">
+                        Click to Discover
+                    </button>
+                    <div class="flower-meaning hidden" id="flowerMeaning2">
+                        <p class="meaning-text">
+                            "Pure love, forgiveness, and beautiful new beginnings."
+                        </p>
+                    </div>
+                </div>
+
+                <!-- ========================================== -->
+                <!-- FLOWER CARD 3 - White Daisy               -->
+                <!-- ========================================== -->
+                <div class="flower-card" id="flowerCard3" data-flower="white-daisy">
+                    <div class="flower-icon">
+                        <!-- REPLACE with actual flower image -->
+                        <img src="white-daisy.jpg" alt="White Daisy" class="flower-image">
+                    </div>
+                    <h3 class="flower-name">White Daisy</h3>
+                    <button class="btn-discover" id="discoverBtn3" data-flower="3">
+                        Click to Discover
+                    </button>
+                    <div class="flower-meaning hidden" id="flowerMeaning3">
+                        <p class="meaning-text">
+                            "Loyalty, honesty, and everlasting happiness."
+                        </p>
+                    </div>
+                </div>
+
+                <!-- ========================================== -->
+                <!-- FLOWER CARD 4 - Blue Hydrangea            -->
+                <!-- ========================================== -->
+                <div class="flower-card" id="flowerCard4" data-flower="blue-hydrangea">
+                    <div class="flower-icon">
+                        <!-- REPLACE with actual flower image -->
+                        <img src="Blue-Hydrangea.jpg" alt="Blue Hydrangea" class="flower-image">
+                    </div>
+                    <h3 class="flower-name">Blue Hydrangea</h3>
+                    <button class="btn-discover" id="discoverBtn4" data-flower="4">
+                        Click to Discover
+                    </button>
+                    <div class="flower-meaning hidden" id="flowerMeaning4">
+                        <p class="meaning-text">
+                            "Understanding, patience, gratitude, and lasting love."
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ========================================== -->
+            <!-- PROGRESS INDICATOR                        -->
+            <!-- ========================================== -->
+            <div class="progress-indicator" id="progressIndicator">
+                <p class="progress-text">
+                    Flowers Discovered:
+                    <span class="progress-count" id="progressCount">0</span>
+                    / 4
+                </p>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+            </div>
+
+            <!-- ========================================== -->
+            <!-- HIDDEN SURPRISE MESSAGE SECTION           -->
+            <!-- ========================================== -->
+            <div class="surprise-message hidden" id="surpriseMessage">
+                <h2 class="surprise-title">🌸 Secret Garden Unlocked 💙</h2>
+                <p class="surprise-text">
+                    "Just like these flowers continue to bloom, I hope our love keeps growing stronger every single day. Thank you for making my world more beautiful. Happy 5th Monthsary, Hubby! ❤️"
+                </p>
+            </div>
+
+            <!-- ========================================== -->
+            <!-- CONTINUE BUTTON (hidden until all flowers) -->
+            <!-- ========================================== -->
+            <a href="page4.html" class="btn-continue hidden" id="continueButton">
+                Continue Our Journey 💙
+            </a>
+
+        </div>
+
+        <!-- ========================================== -->
+        <!-- DECORATIVE ELEMENTS CONTAINERS             -->
+        <!-- ========================================== -->
+        <div class="floating-petals" id="floatingPetals" aria-hidden="true"></div>
+        <div class="sparkles" id="sparkles" aria-hidden="true"></div>
+        <div class="decorative-elements" id="decorativeElements" aria-hidden="true"></div>
+        
+    </section>
+
+    <!-- ========================================== -->
+    <!-- FOOTER                                     -->
+    <!-- ========================================== -->
+    <footer class="garden-footer">
+        <p class="footer-message">Made with 💙 for you.</p>
+    </footer>
+</body>
+</html>

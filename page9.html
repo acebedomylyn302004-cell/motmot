@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>❤️ Love Compatibility Scanner - Happy 5th Monthsary 💙</title>
+    <link rel="stylesheet" href="page9.css">
+    <script src="page9.js" defer></script>
+</head>
+<body>
+    <!-- ============================================ -->
+    <!-- LOVE COMPATIBILITY SCANNER - Full Screen     -->
+    <!-- ============================================ -->
+    <section class="scanner-hero" id="scannerHero">
+        
+        <!-- ========================================== -->
+        <!-- DECORATIVE BACKGROUND ELEMENTS             -->
+        <!-- ========================================== -->
+        <div class="floating-grid" id="floatingGrid"></div>
+        <div class="floating-hearts" id="floatingHearts"></div>
+        <div class="sparkles" id="sparkles"></div>
+        <div class="floating-stars" id="floatingStars"></div>
+        <div class="shooting-stars" id="shootingStars"></div>
+
+        <!-- ========================================== -->
+        <!-- MAIN CONTENT CONTAINER                    -->
+        <!-- ========================================== -->
+        <div class="scanner-content">
+
+            <!-- Main Title -->
+            <h1 class="main-title">❤️ Love Compatibility Scanner</h1>
+
+            <!-- Subtitle -->
+            <p class="subtitle">
+                "Let's see what our Love AI thinks about us... 🤖❤️"
+            </p>
+
+            <!-- ========================================== -->
+            <!-- SCANNER PANEL                             -->
+            <!-- ========================================== -->
+            <div class="scanner-panel" id="scannerPanel">
+                
+                <!-- Scanner Header -->
+                <div class="scanner-header">
+                    <div class="header-left">
+                        <span class="scanner-icon">🤖</span>
+                        <span class="scanner-name">Love AI v5.0</span>
+                    </div>
+                    <div class="header-right">
+                        <span class="scanner-status" id="scannerStatus">● Ready</span>
+                        <span class="scanner-battery">🔋 100%</span>
+                    </div>
+                </div>
+
+                <!-- Profile Section -->
+                <div class="profile-section">
+                    <!-- Left Profile - Putot -->
+                    <div class="profile-card profile-left">
+                        <div class="profile-avatar">
+                            <div class="avatar-ring"></div>
+                            <div class="avatar-ring ring-2"></div>
+                            <span class="avatar-icon">👧</span>
+                            <div class="avatar-glow"></div>
+                            <div class="avatar-pulse"></div>
+                        </div>
+                        <p class="profile-name">Putot</p>
+                        <p class="profile-label">💙 Girlfriend</p>
+                        <div class="profile-hearts">
+                            <span>❤️</span>
+                            <span>💕</span>
+                            <span>💙</span>
+                        </div>
+                    </div>
+
+                    <!-- Scanner Animation -->
+                    <div class="scanner-center">
+                        <div class="scanner-animation" id="scannerAnimation">
+                            <div class="scanner-ring ring-1"></div>
+                            <div class="scanner-ring ring-2"></div>
+                            <div class="scanner-ring ring-3"></div>
+                            <div class="scanner-ring ring-4"></div>
+                            <div class="scanner-ring ring-5"></div>
+                            <div class="scanner-heart-center" id="scannerHeart">❤️</div>
+                            <div class="scanner-beam" id="scannerBeam"></div>
+                            <div class="scanner-particles" id="scannerParticles"></div>
+                        </div>
+                        <div class="scanner-label">SCANNING</div>
+                    </div>
+
+                    <!-- Right Profile - Hubby -->
+                    <div class="profile-card profile-right">
+                        <div class="profile-avatar">
+                            <div class="avatar-ring"></div>
+                            <div class="avatar-ring ring-2"></div>
+                            <span class="avatar-icon">👦</span>
+                            <div class="avatar-glow"></div>
+                            <div class="avatar-pulse"></div>
+                        </div>
+                        <p class="profile-name">Hubby</p>
+                        <p class="profile-label">💙 Boyfriend</p>
+                        <div class="profile-hearts">
+                            <span>❤️</span>
+                            <span>💕</span>
+                            <span>💙</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Start Button -->
+                <button class="btn-start-scan" id="startScanBtn">
+                    <span class="btn-icon">🔍</span>
+                    Start Love Scan
+                    <span class="btn-sub">Analyze your love compatibility</span>
+                </button>
+
+                <!-- ========================================== -->
+                <!-- HIDDEN SCANNING SECTION                   -->
+                <!-- ========================================== -->
+                <div class="scanning-section hidden" id="scanningSection">
+                    <div class="scanning-progress">
+                        <div class="progress-header">
+                            <span class="progress-label">🔍 Scanning...</span>
+                            <span class="progress-percentage" id="scanPercentage">0%</span>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-scan" id="scanProgressBar"></div>
+                            <div class="progress-glow"></div>
+                        </div>
+                    </div>
+                    <div class="scanning-status" id="scanStatus">
+                        <span class="status-dot">●</span>
+                        <span class="status-text" id="statusText">Initializing Love AI...</span>
+                    </div>
+                    <div class="scanning-stats">
+                        <span class="stat-pulse">💓</span>
+                        <span class="stat-text" id="statText">Analyzing heart patterns...</span>
+                    </div>
+                    <div class="scanning-extra">
+                        <div class="extra-item">
+                            <span class="extra-icon">📊</span>
+                            <span class="extra-text">Analyzing compatibility...</span>
+                        </div>
+                        <div class="extra-item">
+                            <span class="extra-icon">💭</span>
+                            <span class="extra-text">Reading love signals...</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========================================== -->
+                <!-- HIDDEN RESULTS SECTION                    -->
+                <!-- ========================================== -->
+                <div class="results-section hidden" id="resultsSection">
+                    <!-- Results Header -->
+                    <div class="results-header">
+                        <div class="result-badge">✨ SCAN COMPLETE</div>
+                        <span class="result-icon">❤️</span>
+                        <h2 class="result-title">Perfect Match Detected</h2>
+                        <div class="result-subtitle">Love Compatibility</div>
+                        <div class="result-infinity" id="resultInfinity">∞%</div>
+                        <div class="result-meter">
+                            <div class="meter-bar" id="meterBar"></div>
+                        </div>
+                    </div>
+
+                    <!-- System Error Message -->
+                    <div class="system-error">
+                        <span class="error-icon">⚠️</span>
+                        <p class="error-text">SYSTEM ERROR</p>
+                        <p class="error-subtext">Your love exceeds measurable limits.</p>
+                    </div>
+
+                    <!-- Funny Results Grid -->
+                    <div class="results-grid">
+                        <div class="result-item">
+                            <span class="result-emoji">🤭</span>
+                            <span class="result-label">Clinginess Level</span>
+                            <span class="result-value">999999%</span>
+                            <div class="result-bar"><div class="result-bar-fill" style="width:100%"></div></div>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-emoji">😂</span>
+                            <span class="result-label">Missing Each Other</span>
+                            <span class="result-value">Unlimited</span>
+                            <div class="result-bar"><div class="result-bar-fill" style="width:100%"></div></div>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-emoji">❤️</span>
+                            <span class="result-label">Trust Level</span>
+                            <span class="result-value">Infinite</span>
+                            <div class="result-bar"><div class="result-bar-fill" style="width:100%"></div></div>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-emoji">🤗</span>
+                            <span class="result-label">Hug Power</span>
+                            <span class="result-value">Maximum</span>
+                            <div class="result-bar"><div class="result-bar-fill" style="width:100%"></div></div>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-emoji">😘</span>
+                            <span class="result-label">Kiss Energy</span>
+                            <span class="result-value">Overloaded</span>
+                            <div class="result-bar"><div class="result-bar-fill" style="width:100%"></div></div>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-emoji">🥹</span>
+                            <span class="result-label">Forever Chance</span>
+                            <span class="result-value">100000000%</span>
+                            <div class="result-bar"><div class="result-bar-fill" style="width:100%"></div></div>
+                        </div>
+                    </div>
+
+                    <!-- Final Verdict -->
+                    <div class="final-verdict">
+                        <span class="verdict-icon">🏆</span>
+                        <p class="verdict-text">"Perfect Match Detected ❤️"</p>
+                        <div class="verdict-stars">⭐⭐⭐⭐⭐</div>
+                    </div>
+
+                    <!-- Additional Surprise -->
+                    <div class="surprise-bonus">
+                        <span class="bonus-emoji">🎁</span>
+                        <p class="bonus-text">💙 Bonus: You've unlocked the <strong>"Love Legends"</strong> achievement!</p>
+                    </div>
+
+                    <!-- Continue Button -->
+                    <a href="page10.html" class="btn-continue" id="continueButton">
+                        Continue Our Journey 💙 ➡
+                        <span class="btn-subtext">Next: The Final Chapter!</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ========================================== -->
+        <!-- DECORATIVE ELEMENTS CONTAINERS             -->
+        <!-- ========================================== -->
+        <div class="confetti-container" id="confettiContainer"></div>
+        
+    </section>
+
+    <!-- ========================================== -->
+    <!-- FOOTER                                     -->
+    <!-- ========================================== -->
+    <footer class="scanner-footer">
+        <p class="footer-message">Made with 💙 for you.</p>
+    </footer>
+</body>
+</html>
